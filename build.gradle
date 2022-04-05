@@ -148,6 +148,7 @@ configure(allprojects) { project ->
 	}
 
 	repositories {
+		maven { url "http://mirrors.163.com/maven/repository/maven-public/" }
 		maven { url "https://repo.spring.io/libs-release" }
 		maven { url "https://repo.spring.io/snapshot" } // Reactor
 		mavenLocal()
