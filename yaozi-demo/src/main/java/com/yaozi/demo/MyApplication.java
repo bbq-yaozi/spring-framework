@@ -1,8 +1,10 @@
 package com.yaozi.demo;
 
 import com.yaozi.demo.beans.Hello;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
 
 public class MyApplication {
 	public static void main(String[] args) {
