@@ -38,4 +38,3 @@ out
 test-output
 atlassian-ide-plugin.xml
 .gradletasknamecache
-yaozi-demo/build/resources/main/applicationContext.xml
