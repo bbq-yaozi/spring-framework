@@ -1,6 +1,7 @@
 package com.yaozi.demo;
 
 import com.yaozi.demo.beans.Hello;
+import com.yaozi.demo.model.User;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -15,5 +16,8 @@ public class MyApplication {
 		XmlBeanFactory factory = new XmlBeanFactory(new ClassPathResource("applicationContext.xml"));
 		Hello bean1 = factory.getBean(Hello.class);
 		bean1.sayHello();
+
+		User testUser = (User) factory.getBean("testUser");
+		System.out.println(testUser);
 	}
 }
